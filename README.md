@@ -1,27 +1,31 @@
-# MERN ThinkBoard
+# 🧠 MERN ThinkBoard
 
 A full-stack notes application built with the MERN stack. ThinkBoard lets users create, view, edit, and delete notes through a responsive React interface backed by an Express and MongoDB API.
 
-## Features
+<p align="center">
+  <a href="https://mern-thinkboard-bwcb.onrender.com"><strong>🚀 Live Application</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/SahilMujawar-19265/mern-thinkboard"><strong>💻 Source Code</strong></a>
+</p>
 
-- Create notes with a title and content
-- View all notes on the home page
-- Open and edit individual notes
-- Delete notes
-- Responsive Tailwind CSS and daisyUI interface
-- Upstash Redis rate limiting
-- MongoDB persistence with Mongoose
-- Production mode for serving the built frontend from Express
+## ✨ Features
 
-## Tech Stack
+- 📝 Create notes with a title and content
+- 📚 View all notes on the home page
+- ✏️ Open and edit individual notes
+- 🗑️ Delete notes
+- 📱 Responsive Tailwind CSS and daisyUI interface
+- 🚦 Upstash Redis rate limiting
+- 💾 MongoDB persistence with Mongoose
+- 🌐 Production mode for serving the built frontend from Express
 
-**Frontend:** React, Vite, React Router, Axios, Tailwind CSS, daisyUI
+## 🛠️ Tech Stack
 
-**Backend:** Node.js, Express, Mongoose, MongoDB
+- 🎨 **Frontend:** React, Vite, React Router, Axios, Tailwind CSS, daisyUI
+- ⚙️ **Backend:** Node.js, Express, Mongoose, MongoDB
+- ☁️ **Additional Services:** Upstash Redis
 
-**Additional Services:** Upstash Redis
-
-## Project Structure
+## 📂 Project Structure
 
 ```text
 mern-thinkboard/
@@ -45,14 +49,14 @@ mern-thinkboard/
 └── package.json
 ```
 
-## Prerequisites
+## ✅ Prerequisites
 
-- Node.js 18 or newer
-- npm
-- A MongoDB database
-- An Upstash Redis database
+- 📦 Node.js 18 or newer
+- 📦 npm
+- 🍃 A MongoDB database
+- ⚡ An Upstash Redis database
 
-## Environment Variables
+## 🔐 Environment Variables
 
 Create a `.env` file in `backend/` with:
 
@@ -66,7 +70,7 @@ NODE_ENV=development
 
 The `PORT` and `NODE_ENV` variables are optional. The server uses port `5001` by default and enables CORS for `http://localhost:5173` outside production.
 
-## Installation
+## 📥 Installation
 
 Clone the repository:
 
@@ -82,7 +86,7 @@ npm install --prefix backend
 npm install --prefix frontend
 ```
 
-## Running Locally
+## ▶️ Running Locally
 
 Start the backend:
 
@@ -98,19 +102,19 @@ npm run dev --prefix frontend
 
 Open `http://localhost:5173` in your browser. The API is available at `http://localhost:5001/api/notes`.
 
-## API Routes
+## 🔌 API Routes
 
 All note routes are prefixed with `/api/notes`.
 
 | Method | Endpoint | Description |
 |---|---|---|
-| `GET` | `/api/notes` | Get all notes |
-| `GET` | `/api/notes/:id` | Get a note by ID |
-| `POST` | `/api/notes` | Create a note |
-| `PUT` | `/api/notes/:id` | Update a note |
-| `DELETE` | `/api/notes/:id` | Delete a note |
+| `GET` | `/api/notes` | 📚 Get all notes |
+| `GET` | `/api/notes/:id` | 🔎 Get a note by ID |
+| `POST` | `/api/notes` | 📝 Create a note |
+| `PUT` | `/api/notes/:id` | ✏️ Update a note |
+| `DELETE` | `/api/notes/:id` | 🗑️ Delete a note |
 
-## Production Build
+## 🏗️ Production Build
 
 From the repository root, build the frontend and start the application:
 
@@ -121,25 +125,25 @@ npm start
 
 Set `NODE_ENV=production` and ensure MongoDB and Upstash environment variables are configured. The Express server will serve the frontend from `frontend/dist`.
 
-## Scripts
+## 📜 Available Scripts
 
 ### Root
 
-- `npm run build` - Install all dependencies and build the frontend
-- `npm start` - Start the backend server
+- 🏗️ `npm run build` - Install all dependencies and build the frontend
+- ▶️ `npm start` - Start the backend server
 
 ### Backend
 
-- `npm run dev --prefix backend` - Start with Nodemon
-- `npm start --prefix backend` - Start the server with Node.js
+- 🔄 `npm run dev --prefix backend` - Start with Nodemon
+- ▶️ `npm start --prefix backend` - Start the server with Node.js
 
 ### Frontend
 
-- `npm run dev --prefix frontend` - Start the Vite development server
-- `npm run build --prefix frontend` - Build for production
-- `npm run lint --prefix frontend` - Run ESLint
-- `npm run preview --prefix frontend` - Preview the production build
+- ⚡ `npm run dev --prefix frontend` - Start the Vite development server
+- 🏗️ `npm run build --prefix frontend` - Build for production
+- 🔍 `npm run lint --prefix frontend` - Run ESLint
+- 👀 `npm run preview --prefix frontend` - Preview the production build
 
-## License
+## 📄 License
 
 ISC
